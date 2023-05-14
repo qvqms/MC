@@ -1,72 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" Content ="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    <title>WebMC</title>
-    <link rel="shortcut icon" href="https://dl2.img.timecdn.cn/2023/02/19/logo81f510516427b7a2.png" type="img/x-icon" />
-	<link rel="apple-touch-icon" href="https://dl2.img.timecdn.cn/2023/02/19/logo81f510516427b7a2.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="https://dl2.img.timecdn.cn/2023/02/19/logo81f510516427b7a2.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="https://dl2.img.timecdn.cn/2023/02/19/logo81f510516427b7a2.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="https://dl2.img.timecdn.cn/2023/02/19/logo81f510516427b7a2.png">
-    <link rel="apple-touch-icon" href="https://dl2.img.timecdn.cn/2023/02/19/logo81f510516427b7a2.png" />
-    <link rel="stylesheet" type="text/css" href="./mc.css" />
-    <script src="./src/main.js" type="module"></script>
-    <style id="mcpage-preload">
-        mcpage-preload {
-            position: absolute; top: 0;
-            width: 100vw;
-            text-align: center;
-            height: 100vh;
-            overflow: hidden;
-            background: #1D1F21;
-            transition: opacity 1s ease;
-            z-index: 100000;
-        }
-        mcpage-preload p {
-            padding-top: calc(40vh + 1em);
-            margin-top: 0;
-            animation: loading-blink 1.3s infinite ease-out;
-        }
-        @keyframes loading-blink {
-            50% { color: transparent; }
-        }
-        mcpage-preload img {
-            position: fixed;
-            bottom: 60%; left: 50%;
-            transform: translateX(-50%);
-        }
-        mcpage-preload slot > ul, ::slotted(ul) {
-            list-style: none;
-            margin: 20px;
-            padding: 0;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            line-height: 1.2em;
-        }
-        mcpage-preload .left {
-            text-align: start;
-            direction: rtl;
-            width: 50%;
-            float: left;
-        }
-        mcpage-preload .right {
-            text-align: start;
-            width: 50%;
-            float: right;
-        }
-    </style>
-</head>
-<body>
-    <mcpage-preload>
-        <img src="https://dl.img.timecdn.cn/2023/04/05/jumpingBlock.gif" />
-        <p>Loading...</p>
-        <div><progress value="0" max="0"></progress>&emsp;<span class="loadingCount">0</span> / <span class="loadedCount">0</span></div>
-        <div class="left"><slot name="loading"><ul></ul></slot></div>
-        <div class="right"><slot name="loaded"><ul></ul></slot></div>
-        <ul slot="loading"></ul>
-        <ul slot="loaded"></ul>
-    </mcpage-preload>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>我的WEB</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="SYSTEM-CMD-WIN11的WEB" />
+        <meta name="description" content="SYSTEM-CMD-WIN11的WEB" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+    </head>
+    <body>
+    	<div id="header">
+    		<div class="header-con clearfix">
+	    		<div class="logo">
+	    			<a href="index.html" class='icon'></a>
+	    			<span class="slogon"></span>
+	    		</div>
+	    		<div class="nav">
+	    			<a href="index.html" class="current">首页<i></i></a>
+               			<a href="HTML/about.html">关于<i></i></a>
+                        <a href="https://space.bilibili.com/678399556/dynamic?spm_id_from=444.41.list.card_avatar.click">bilibili支持一下<i></i></a> 
+               			<a href="https://jq.qq.com/?_wv=1027&k=77rOZ1Wh">加入QQ群<i></i></a>
+	    			<a href="HTML/gifts.html">小礼物<i></i></a>
+	    			<a href="https://qvqms.github.io/os/">友链<i></i></a>
+	    		</div>
+    		</div>
+    	</div>
+
+        <div id="fullpage">
+            <div class="section " id="section1">
+                <div class="intro">
+                    <a href="https://qvqms.github.io/MC/" target="_blank"><img src="https://dl.img.timecdn.cn/2023/05/14/MC.png"></a>
+                </div>
+            </div>
+            <div class="section " id="section1">
+                <div class="intro">
+                    <a href="https://space.bilibili.com/678399556/dynamic?spm_id_from=444.41.list.card_avatar.click" target="_blank"><img src="https://dl.img.timecdn.cn/2023/05/14/1.png"></a>
+                </div>
+            </div>
+            <div class="section " id="section1">
+                <div class="intro">
+                    <a href="https://jq.qq.com/?_wv=1027&k=77rOZ1Wh" target="_blank"><img src="https://dl2.img.timecdn.cn/2023/05/14/2.png"></a>
+                </div>
+            </div>
+            <div class="section " id="section9">
+            <div class="intro">
+                <a href="https://qvqms.github.io/os/" target="_blank"><img src="https://dl3.img.timecdn.cn/2023/05/14/3.png"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/vender/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="js/vender/jquery.fullPage.min.js"></script>
+        <script type="text/javascript">
+            $('#fullpage').fullpage({
+                navigation: true,
+                navigationPosition: 'right'
+            });
+        </script>
+        
+        <div style="display:none;">
+        <script src="https://s95.cnzz.com/z_stat.php?id=1253671807&web_id=1253671807" language="JavaScript"></script>
+        </div> 
+    <a href="https://qvqms.github.io/os/" target="_blank">友链</a>
+    </body>    
 </html>
