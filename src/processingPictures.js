@@ -214,7 +214,7 @@ asyncLoadResByUrl("texture/gui.png")
         setBorderOrBgStyle(`move-btn-${name}-active`, canvas.darken().toImage());
     }
 });
-asyncLoadResByUrl("texture/spritesheet.png")
+asyncLoadResByUrl("https://dl.img.timecdn.cn/2023/05/14/spritesheet.png")
 .then(img => {
     const coordZoomFactor = img.width / 256;
     const canvas = new Canvas2D();
@@ -227,7 +227,7 @@ asyncLoadResByUrl("texture/spritesheet.png")
     drawAndSet(8, 32, 8, 8, "hotbar-inventory-btn-bg", {slice: [1]});
     drawAndSet(0, 32, 8, 8, "hotbar-inventory-btn-bg-active", {slice: [1]});
 });
-asyncLoadResByUrl("texture/background.png")
+asyncLoadResByUrl("https://dl2.img.timecdn.cn/2023/05/14/background.png")
 .then(img => {
     const coordZoomFactor = img.width / 16;
     const canvas = new Canvas2D();
@@ -235,7 +235,7 @@ asyncLoadResByUrl("texture/background.png")
     setBorderOrBgStyle("background", canvas.toImage());
     setBorderOrBgStyle("background-darken", canvas.darken().toImage());
 });
-asyncLoadResByUrl("texture/panorama.png")
+asyncLoadResByUrl("https://dl3.img.timecdn.cn/2023/05/14/panorama.png")
 .then(img => {
     const {width, height} = img;
     const canvas = new Canvas2D(height, height);
@@ -250,7 +250,7 @@ asyncLoadResByUrl("texture/panorama.png")
         ans.push(ans[face]);
     setResource("welcomePage/textures", ans);
 });
-asyncLoadResByUrl("texture/title.png");
+asyncLoadResByUrl("https://dl3.img.timecdn.cn/2023/05/14/title.png");
 
 import { Render } from "./Renderer/Render.js";
 import { Camera } from "./Renderer/Camera.js";
